@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS BASIC</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="myForm" >
+    <div>
+      <div class="mainscreen">
+        <div class="card">
+          <div class="leftside">
+            <img src="./images/ronaldo.jpg" class="product" alt="ronaldo" />
+          </div>
+          <div class="rightside">
+            <form action="">
+              <h1>Phiếu Thanh Toán</h1>
+              <h2>Thông Tin Khách Hàng</h2>
+              <p>Họ Tên</p>
+              <input type="text" class="inputbox" name="name" required />
+              <p>Số Thẻ</p>
+              <input
+                type="number"
+                class="inputbox"
+                name="card_number"
+                id="card_number"
+                required
+              />
+
+              <p>Loại Thẻ</p>
+              <select class="inputbox" name="card_type" id="card_type" required>
+                <option value="">--Chọn Loại--</option>
+                <option value="Visa">Viettel</option>
+                <option value="RuPay">Vinaphone</option>
+                <option value="MasterCard">Mobiphone</option>
+              </select>
+              <div class="expcvv">
+                <p class="expcvv_text">Ngày/Tháng</p>
+                <input
+                  type="date"
+                  class="inputbox"
+                  name="exp_date"
+                  id="exp_date"
+                  required
+                />
+
+                <p class="expcvv_text2">Note</p>
+                <input
+                 
+                  class="inputbox"
+                  name="cvv"
+                  id="cvv"
+                  required
+                />
+              </div>
+              <p></p>
+              <button type="submit" class="button">Thanh Toán</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
